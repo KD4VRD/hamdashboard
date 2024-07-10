@@ -43,7 +43,7 @@ const aIMG = [
 //
   ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
 //
-["Tropical/R","https://www.nhc.noaa.gov/storm_graphics/AT02/refresh/AL022024_5day_cone_no_line_and_wind+png/151128_5day_cone_no_line_and_wind.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
+["Tropics", "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif", "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/Sandwich/1200x1200.jpg",  ],  
 //
 ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.gif","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" ],
 //
