@@ -8,14 +8,16 @@ const aURL = [
   ["add10d", "BACK", "#", "1", "R"],
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
-  ["2196F3", "BAND PLAN", "https://pwarc.com/documents/ARRLBandPlan.pdf","1","R",],
+  ["2196F3", "BAND PLAN", "https://kd4atw.org/wp-content/uploads/2012/05/band_plan.png","1.4","R",],
+  ["2196F3", "FRYING PAN","https://www.youtube.com/embed/jIG3x00sEe8?si=V7Nu3teqF865AGbj","1",],
+  ["2196F3", "BEACH CAM","https://youtube.com/embed/f3W_z7wbREk","1",],
   ["2196F3", "CONTEST","https://www.contestcalendar.com/fivewkcal.html","1",],
   ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
   ["2196F3","LIGHTNING","https://map.blitzortung.org/#3.87/36.5/-89.41","1","R", ],
   ["2196F3", "POTA", "https://pota.app/#/", "1.2"],
   ["ff0000", "WATCHES & WARNINGS","https://www.weather.gov/","1","R" ],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-  ["2196F3","WEATHER","https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=36.5&lon=-89.41&zoom=5","1","R",],
+  ["2196F3","WEATHER","https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=34.01&lon=-78.18&zoom=8","1","R",],
   ["2196F3","WINDS","https://earth.nullschool.net/#current/wind/surface/level/orthographic=-89.41,36.5,3000","1","R",],];
 
 // Dashboard items
@@ -27,27 +29,27 @@ const aURL = [
 const aIMG = [
    ["RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
 //  
-   ["LOCAL RADAR","https://radar.weather.gov/ridge/standard/KRAX_loop.gif?refreshed=1720284520450",],
+   ["LOCAL RADAR/LIGHTNING","https://radar.weather.gov/ridge/standard/KLTX_loop.gif","https://www.blitzortung.org/en/Images/image_b_fl.png",],
 //
    [ "National Forecast/R","https://www.wpc.ncep.noaa.gov//noaa/noaa.gif", "http://origin.wpc.ncep.noaa.gov/basicwx/allfcsts_loop_ndfd.gif"],
 //
    ["Watches and Warnings",    "https://forecast.weather.gov/wwamap/png/US.png" ],   
 //
-   [ "SAT CONUS w/ Lightning","https://cdn.star.nesdis.noaa.gov/GOES16/GLM/CONUS/EXTENT3/20241891456-20241891851-GOES16-GLM-CONUS-EXTENT3-625x375.gif"],
+   [ "SAT CONUS w/ Lightning","https://cdn.star.nesdis.noaa.gov/GOES16/GLM/CONUS/EXTENT3/GOES16-CONUS-EXTENT3-625x375.gif"],
 //
-   [ "SAT SE w/ Lightning","https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/eus/EXTENT3/20241890956-20241891351-GOES16-GLM-EUS-EXTENT3-1000x1000.gif",]  ,
+   [ "SAT SE w/ Lightning","https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/se/EXTENT3/GOES16-SE-EXTENT3-600x600.gif",]  ,
 //  
-   [ "SAT ATLANTIC ","https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/GEOCOLOR/20241910740-20241911550-GOES16-ABI-TAW-GEOCOLOR-900x540.gif",  ],
+   [ "SAT ATLANTIC ","https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif",  ],
 // 
-   [ "LIGHTNING LOCAL","https://www.blitzortung.org/en/Images/image_b_fl.png",  ],
+   [ "WAVE & TIDE","https://wave.marineweather.net/itide/tides/png/nc_lockwoods_folly_inlet.png" , "https://www.ndbc.noaa.gov/plot_met.php?station=SSBN7&meas=wvht&uom=E", ],
 //
-  ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
+   ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
 //
-["Tropics", "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/Sandwich/GOES16-TAW-Sandwich-900x540.gif", "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/se/Sandwich/1200x1200.jpg",  ],  
+   ["Tropical/R","https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
 //
-["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.gif","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" ],
+   ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.gif","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" ],
 //
-  ["MEMORIAL BRIDGE",
+   ["MEMORIAL BRIDGE",
   "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Wilimington_01.JPG"],];
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
 const tileDelay = [11200,10000,11000,10100,10200,10500,10300,10600,10400,10700,10900,10800];
