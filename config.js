@@ -10,7 +10,7 @@ const aURL = [
   ["0dd1a7", "Help", "#", "1"],
   ["2196F3", "BAND PLAN", "https://kd4atw.org/wp-content/uploads/2012/05/band_plan.png","1.4","R",],
   ["2196F3", "FRYING PAN","https://www.youtube.com/embed/jIG3x00sEe8?si=V7Nu3teqF865AGbj","1",],
-  ["2196F3", "SSBEACH CAM","https://youtube.com/embed/f3W_z7wbREk","1",],
+  ["2196F3", "SS BEACH CAM","https://youtube.com/embed/f3W_z7wbREk","1",],
   ["2196F3", "BALD HEAD CAM","https://youtube.com/embed/lcANlrXCR0Q","1",],
   ["2196F3", "WB CAM","https://youtube.com/embed/Va84nIGXwBo","1",],
   ["2196F3", "CONTEST","https://www.contestcalendar.com/fivewkcal.html","1",],
