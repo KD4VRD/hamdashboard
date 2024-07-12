@@ -13,6 +13,7 @@ const aURL = [
   ["2196F3", "SS BEACH CAM","https://youtube.com/embed/f3W_z7wbREk","1",],
   ["2196F3", "BALD HEAD CAM","https://youtube.com/embed/lcANlrXCR0Q","1",],
   ["2196F3", "WB CAM","https://youtube.com/embed/Va84nIGXwBo","1",],
+  ["2196F3", "MB CAM","https://youtube.com/embed/GKOyGoRE0Tg","1",],
   ["2196F3", "CONTEST","https://www.contestcalendar.com/fivewkcal.html","1",],
   ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
   ["2196F3","LIGHTNING","https://map.blitzortung.org/#3.87/36.5/-89.41","1","R", ],
