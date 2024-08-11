@@ -19,6 +19,7 @@ const aURL = [
   ["2196F3","LIGHTNING","https://map.blitzortung.org/#3.87/36.5/-89.41","1","R", ],
   ["2196F3", "POTA", "https://pota.app/#/", "1.2"],
   ["ff0000", "WATCHES & WARNINGS","https://www.weather.gov/","1","R" ],
+  ["2196F3", "FLOODING","https://fiman.nc.gov","1","R" ],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
   ["2196F3","WEATHER","https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=34.01&lon=-78.18&zoom=8","1","R",],
   ["2196F3","WINDS","https://earth.nullschool.net/#current/wind/surface/level/orthographic=-89.41,36.5,3000","1","R",],];
@@ -48,7 +49,7 @@ const aIMG = [
 //
    ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
 //
-   ["Tropical/R","https://www.nhc.noaa.gov/storm_graphics/AT04/refresh/AL042024_5day_cone_no_line_and_wind+png/154938_5day_cone_no_line_and_wind.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
+   ["Tropical/R","https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
 //
    ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.gif","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" ],
 //
