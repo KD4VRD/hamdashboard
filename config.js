@@ -1,4 +1,4 @@
-const topBarCenterText = `KD4VRD - FM04va`;
+const topBarCenterText = `K4IR - FM04va`;
 // Menu items
 // Structure is as follows HTML Color code, Option, target URL, scaling 1=Original Size, side (optional, nothing is Left, "R" is Right)
 // The values are [color code, menu text, target link, scale factor, side],
