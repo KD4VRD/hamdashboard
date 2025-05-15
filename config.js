@@ -1,4 +1,4 @@
-const topBarCenterText = `K4IR - FM04va`;
+const topBarCenterText = `JOHN K4IR - FM04va`;
 // Menu items
 // Structure is as follows HTML Color code, Option, target URL, scaling 1=Original Size, side (optional, nothing is Left, "R" is Right)
 // The values are [color code, menu text, target link, scale factor, side],
@@ -9,7 +9,7 @@ const aURL = [
   ["ff9100", "Refresh", "#", "1"],
   ["0dd1a7", "Help", "#", "1"],
 
-  ["2196F3", "FRYING PAN","https://www.youtube.com/embed/jIG3x00sEe8?si=V7Nu3teqF865AGbj","1",],
+  ["2196F3", "FRYING PAN","https://youtu.be/pW_S5RTdnSQ","1",],
   ["2196F3", "SS BEACH CAM","https://youtube.com/embed/f3W_z7wbREk","1",],
   ["2196F3", "BALD HEAD CAM","https://youtube.com/embed/lcANlrXCR0Q","1",],
   ["2196F3", "WB CAM","https://youtube.com/embed/Va84nIGXwBo","1",],
