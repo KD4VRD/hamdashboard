@@ -54,7 +54,7 @@ const aIMG = [
 //
    ["Tropical/R","https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
 //
-   ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.gif","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.gif","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.gif" ],
+   ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.png","https://www.spc.noaa.gov/products/outlook/day2otlk_1730.png","https://www.spc.noaa.gov/products/outlook/day3otlk_0730.png" ],
 //
    ["MEMORIAL BRIDGE",
   "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Wilimington_01.JPG"],];
