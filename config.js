@@ -50,6 +50,7 @@ const aIMG = [
 // 
    [ "WAVE & TIDE","https://wave.marineweather.net/itide/tides/png/nc_lockwoods_folly_inlet.png" , "https://polar.ncep.noaa.gov/nwps/images/rtimages/ilm/nwps/CG1/swan_sigwaveheight_hr000.png", ],
 //
+//
    ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
 //
    ["Tropical/R","https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png","https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png" ],  
