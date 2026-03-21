@@ -48,7 +48,7 @@ const aIMG = [
 //  
    [ "SAT ATLANTIC ","https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif",  ],
 // 
-   [ "WAVE & TIDE","https://wave.marineweather.net/itide/tides/png/nc_lockwoods_folly_inlet.png" , "https://www.ndbc.noaa.gov/plot_met.php?station=SSBN7&meas=wvht&uom=E", ],
+   [ "WAVE & TIDE","https://wave.marineweather.net/itide/tides/png/nc_lockwoods_folly_inlet.png" , "https://polar.ncep.noaa.gov/nwps/images/rtimages/ilm/nwps/CG1/swan_sigwaveheight_hr000.png", ],
 //
    ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png","https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"], 
 //
