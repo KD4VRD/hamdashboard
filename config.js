@@ -1,56 +1,29 @@
-const disableSetup = false;
-const disableLdCfg = false;
-var topBarCenterText = `VA3HDL - FN04ga - .js`;
-
-// Grid layout
-var layout_cols = 4;
-var layout_rows = 3;
+const topBarCenterText = `JOHN K4IR - FM04va`;
 
 // Menu items
 // Structure is as follows HTML Color code, Option, target URL, scaling 1=Original Size, side (optional, nothing is Left, "R" is Right)
 // The values are [color code, menu text, target link, scale factor, side],
 // add new lines following the structure for extra menu options. The comma at the end is important!
-var aURL = [
-  ["f3de21", "SATS", "satellite.js"],
-  
-  ["2196F3", "CLUBLOG", "https://clublog.org/livestream/VA3HDL", "1.7"],
-  [
-    "2196F3",
-    "CONTEST",
-    "https://www.contestcalendar.com/fivewkcal.html",
-    "1",
-  ],
+const aURL = [
+  ["add10d", "BACK", "#", "1"],
+  ["add10d", "BACK", "#", "1", "R"],
+  ["ff9100", "Refresh", "#", "1"],
+  ["0dd1a7", "Help", "#", "1"],
+
+  ["2196F3", "BALD HEAD CAM", "https://youtube.com/embed/lcANlrXCR0Q", "1"],
+  ["2196F3", "MB CAM", "https://youtube.com/embed/GKOyGoRE0Tg", "1"],
+  ["2196F3", "CONTEST", "https://www.contestcalendar.com/fivewkcal.html", "1"],
   ["2196F3", "DX CLUSTER", "https://dxcluster.ha8tks.hu/map/", "1"],
-  [
-    "2196F3",
-    "LIGHTNING",
-    "https://map.blitzortung.org/#3.87/36.5/-89.41",
-    "1",
-    "R",
-  ],
-  ["2196F3", "PISTAR", "http://pi-star.local/", "1.2"],
-  [
-    "2196F3",
-    "RADAR",
-    "dark|https://weather.gc.ca/?layers=alert,radar&center=43.39961001,-78.53212031&zoom=6&alertTableFilterProv=ON",
-    "1",
-    "R"
-  ],
+  ["2196F3", "POTA", "https://pota.app/#/", "1.2"],
+  ["2196F3", "BAND PLAN", "https://kd4atw.org/wp-content/uploads/2012/05/band_plan.png", "1.4", "R"],
+  ["2196F3", "LIGHTNING", "https://map.blitzortung.org/#3.87/36.5/-89.41", "1", "R"],
+  ["ff0000", "WATCHES & WARNINGS", "https://www.weather.gov/", "1", "R"],
+  ["2196F3", "Weather Pred Center", "https://www.wpc.ncep.noaa.gov/#page=ovw", "1", "R"],
+  ["2196F3", "NHC", "https://www.nhc.noaa.gov/", "1", "R"],
+  ["2196F3", "FLOODING", "file:///E:/Ham%20Dashboard/ilm_hydroSA.htm", "1", "R"],
   ["2196F3", "TIME.IS", "https://time.is/", "1", "R"],
-  [
-    "2196F3",
-    "WEATHER",
-    "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=44.0157&lon=-79.4591&zoom=5",
-    "1",
-    "R",
-  ],
-  [
-    "2196F3",
-    "WINDS",
-    "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-78.79,44.09,3000",
-    "1",
-    "R",
-  ],
+  ["2196F3", "WEATHER", "https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&lat=34.01&lon=-78.18&zoom=8", "1", "R"],
+  ["2196F3", "WINDS", "https://earth.nullschool.net/#current/wind/surface/level/orthographic=-89.41,36.5,3000", "1", "R"]
 ];
 
 // Dashboard items
@@ -59,56 +32,44 @@ var aURL = [
 // the comma at the end is important!
 // You can't add more items because there are only 12 placeholders on the dashboard
 // but you can replace the titles and the images with anything you want.
-var aIMG = [
-  [["Radar CONUS", "Radar Small"], "https://radar.weather.gov/ridge/standard/CONUS-LARGE_loop.gif", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
-  [
-    "LOCAL RADAR (inverted)",
-    "invert|https://radar.weather.gov/ridge/standard/KNQA_loop.gif",
-  ],
-  [
-    "NOAA D-RAP (inverted)",
-    "invert|https://s.w-x.co/staticmaps/wu/wxtype/county_loc/bgm/animate.png",
-  ],
-  [
-    "ISS POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544",
-  ],
-  [
-    "SATELLITE CAN",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/can/EXTENT3/GOES16-CAN-EXTENT3-1125x560.gif",
-  ],
-  [
-    "SATELLITE CGL",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/cgl/EXTENT3/GOES16-CGL-EXTENT3-600x600.gif",
-  ],
-  [
-    "LIGHTNING",
-    "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa",
-  ],
-  [
-    "LIGHTNING LOCAL",
-    "https://www.blitzortung.org/en/Images/image_b_ny.png",
-  ],
-  ["YOUTUBE EXAMPLE", "iframe|https://www.youtube.com/embed/fzPFaXAV_2Y?autoplay=1&mute=1"],
-  [
-    "WEBSITE EXAMPLE",
-    "iframe|https://globe.adsbexchange.com/?airport=YYZ",
-  ],
-  ["VIDEO EXAMPLE", "https://himawari8.nict.go.jp/movie/720/20240611_pifd.mp4"],
-  ["HF PROPAGATION",
-    "https://www.hamqsl.com/solar101vhf.php"],
+const aIMG = [
+  ["RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
+
+  ["LOCAL RADAR/LIGHTNING", "https://radar.weather.gov/ridge/standard/KLTX_loop.gif", "https://www.blitzortung.org/en/Images/image_b_fl.png"],
+
+  ["National Forecast/R", "https://www.wpc.ncep.noaa.gov//noaa/noaa.gif","https://www.wpc.ncep.noaa.gov/basicwx/94fndfd.gif"],
+
+  ["Watches and Warnings", "https://forecast.weather.gov/wwamap/png/US.png"],
+
+  ["SAT CONUS w/ Lightning", "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/CONUS/EXTENT3/GOES16-CONUS-EXTENT3-625x375.gif"],
+
+  ["SAT SE w/ Lightning", "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/se/EXTENT3/GOES16-SE-EXTENT3-600x600.gif"],
+
+  ["SAT ATLANTIC", "https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/GEOCOLOR/GOES16-TAW-GEOCOLOR-900x540.gif"],
+
+  ["WAVE & TIDE", "https://wave.marineweather.net/itide/tides/png/nc_lockwoods_folly_inlet.png", "https://polar.ncep.noaa.gov/nwps/images/rtimages/ilm/nwps/CG1/swan_sigwaveheight_hr000.png"],
+
+  ["TEMP/R", "https://www.weather.gov/images/rah/statebrief/MaxT_SFC-Day1State.png", "https://www.weather.gov/images/rah/statebrief/MinT_SFC-Day1State.png"],
+
+  ["Tropical/R", "https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png", "https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png"],
+
+  ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.png", "https://www.spc.noaa.gov/products/outlook/day2otlk_1730.png", "https://www.spc.noaa.gov/products/outlook/day3otlk_0730.png"],
+
+  ["MEMORIAL BRIDGE", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Wilimington_01.JPG", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=US17E_BrunswickRiver.jpg","https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=US17E_RiverRd.jpg"]
 ];
 
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
-var tileDelay = [
-  11200,10000,11000,10100,
-  10200,10500,10300,10600,
-  30400,60700,60900,10800
+const tileDelay = [
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  3000
 ];
-
-// RSS feed items
-// Structure is [feed URL, refresh interval in minutes]
-var aRSS = [
-  ["https://www.amsat.org/feed/", 60],           // Example RSS feed, refresh every 60 minutes
-  ["https://daily.hamweekly.com/atom.xml", 120], // Example Atom feed, refresh every 120 minutes
-  ];
