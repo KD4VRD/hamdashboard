@@ -37,7 +37,7 @@ const aIMG = [
 
   ["LOCAL RADAR/LIGHTNING", "https://radar.weather.gov/ridge/standard/KLTX_loop.gif", "https://www.blitzortung.org/en/Images/image_b_fl.png"],
 
-  ["National Forecast/R", "https://www.wpc.ncep.noaa.gov//noaa/noaa.gif", "http://origin.wpc.ncep.noaa.gov/basicwx/allfcsts_loop_ndfd.gif"],
+  ["National Forecast/R", "https://www.wpc.ncep.noaa.gov//noaa/noaa.gif","https://www.wpc.ncep.noaa.gov/basicwx/94fndfd.gif"],
 
   ["Watches and Warnings", "https://forecast.weather.gov/wwamap/png/US.png"],
 
@@ -55,8 +55,21 @@ const aIMG = [
 
   ["1,2,3 DAY Outlook/R", "https://www.spc.noaa.gov/products/outlook/day1otlk_1630.png", "https://www.spc.noaa.gov/products/outlook/day2otlk_1730.png", "https://www.spc.noaa.gov/products/outlook/day3otlk_0730.png"],
 
-  ["MEMORIAL BRIDGE", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Wilimington_01.JPG", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=US17E_BrunswickRiver.jpg"]
+  ["MEMORIAL BRIDGE", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=Wilimington_01.JPG", "https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=US17E_BrunswickRiver.jpg","https://eapps.ncdot.gov/services/traffic-prod/v1/cameras/images?filename=US17E_RiverRd.jpg"]
 ];
 
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
-const tileDelay = [11200, 10000, 11000, 10100, 10200, 10500, 10300, 10600, 10400, 10700, 10900, 10800];
+const tileDelay = [
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  5000,
+  3000
+];
